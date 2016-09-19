@@ -1,0 +1,18 @@
+intial_height = 1.2
+intial_velocity = 5.4
+g = 9.8
+
+def height(t):
+    h = intial_height + intial_velocity*t - (.5 * g * (t ** 2))
+    return h
+
+def velocity(t):
+        v = intial_velocity - g * t
+        return v
+
+print(height(2))
+print(velocity(2))
+
+#You can just modify the print function print(height(t)) to get height at whatever time you want
+# t= .5 : h = 2.675, v = .5
+# t = 2

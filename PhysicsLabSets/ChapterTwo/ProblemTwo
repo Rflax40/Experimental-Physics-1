@@ -1,0 +1,13 @@
+#Problem Number 2
+import numpy as np
+v = 10
+a = 2.5
+#Velocity, Acceleration, z
+
+def calculatedV(z):
+        V = v * (1 - (z / (np.sqrt((a ** 2) + (z ** 2)))))
+        return V
+
+print(calculatedV(4 + (1 / 3)))
+print(calculatedV(8 +(2 / 3)))
+print(calculatedV(13))
