@@ -1,0 +1,9 @@
+# Problem number 2 Chapter 3
+import numpy as np
+import math
+a = np.exp(np.ones(100))
+b = np.linspace(0, 360, 361)
+c = b * ( (math.pi) / 180)
+d = np.arange(0, 17, .2)
+e = np.arange(0, 17.2, .2)
+print(e)

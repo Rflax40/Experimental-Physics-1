@@ -1,0 +1,9 @@
+#Problem number 1 chapter 3
+import numpy as np
+
+r = np.linspace(0, 29, 9)
+v = r ** 2
+c = r * 2
+d = r + r
+
+print(c)

@@ -1,0 +1,14 @@
+# Problem 4 Chapter 3
+import numpy as np
+initial_height = 10
+g = 9.8
+y = np.arange(10, 0, -.5)
+def inverseT(h):
+    t = np.sqrt( (2 * (initial_height - h)) / g)
+    return t
+c = inverseT(y)
+v = (y[1:20] - y[0:19]) / (c[1:20] - c[0:19])
+# This is a more elegant way to represent it
+# But relies on y being an evenly spaced list
+e = y - (y +.5)
+print(v)

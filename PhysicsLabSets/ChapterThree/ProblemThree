@@ -1,0 +1,11 @@
+# Problem 3 Chapter 3
+import numpy as np
+initial_height = 10
+g = 9.8
+y = np.arange(10, 0, -.5)
+def inverseT(h):
+    t = np.sqrt( (2 * (initial_height - h)) / g)
+    return t
+c = inverseT(y)
+print(y)
+print(c)
